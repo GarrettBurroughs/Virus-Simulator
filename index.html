@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <canvas id="myChart"></canvas>
+    <input type="checkbox" name="Healthy" id="healthy" checked="true"> Show Healthy graph
+    <input type="checkbox" name="Infected" id="infected" checked="true"> Show Infected graph
+    <input type="checkbox" name="Unaffected" id="unaffected" checked="true"> Show Unaffected graph
+    <input type="checkbox" name="Recovered" id="recovered" checked="true"> Show Recovered graph
+    <input type="checkbox" name="Logarithmic" id="logarithmic"> Logarithmic Graph
+    <div id="control">
+        K-Value:
+        <input type="text" name="kvalue" id="kval" value="1">
+        Recovery Time:
+        <input type="text" name="recoverTime" id="recoverTime" value="7">
+        Population
+        <input type="text" name="population" id="population" value="10000">
+        <input type="button" value="Run" id="run">
+    </div>
+
+</body>
+
+</html>
